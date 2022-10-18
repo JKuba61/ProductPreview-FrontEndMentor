@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(255, 229, 212);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-preview {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product-preview__img {
+  background-image: url("./images/image-product-mobile.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 300px;
+}
+.product-preview__info {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.product-preview__type {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: grey;
+}
+.product-preview__title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: "Fraunces", serif;
+}
+.product-preview__text {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: grey;
+}
+.product-preview__pricebox {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.product-preview__price {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 2.5rem;
+  color: rgb(56, 146, 112);
+  font-family: "Fraunces", serif;
+}
+.product-preview__crossed-price {
+  margin-top: 0;
+  text-decoration: line-through;
+  color: grey;
+}
+.product-preview__btn {
+  margin-bottom: 0.5em;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(56, 146, 112);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s;
+}
+.product-preview__btn:hover {
+  background-color: rgb(43, 102, 79);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 998px) {
+  .product-preview {
+    flex-direction: row;
+    max-width: 800px;
+  }
+  .product-preview__img {
+    width: 400px;
+    height: 600px;
+    background-image: url("./images/image-product-desktop.jpg");
+  }
+  .product-preview__info {
+    padding: 2em 3em;
+    width: 400px;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=main.css.map */
